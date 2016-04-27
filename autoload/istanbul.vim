@@ -24,16 +24,16 @@ endfunction
 function! s:SetHighlight()
     hi clear SignColumn
     hi link SignColumn Normal
-    hi uncovered guifg=#fc8c84 guibg=#fc8c84 ctermfg=196 ctermbg=196
-    hi fstatno guifg=#ffc520 guibg=#ffc520  ctermfg=208 ctermbg=208
-    hi covered guifg=#004400 guibg=green ctermfg=40 ctermbg=40
-    hi branch_true guifg=black guibg=yellow ctermfg=16 ctermbg=226
-    hi branch_false guifg=black guibg=yellow ctermfg=16 ctermbg=226
-    sign define uncovered text=XX texthl=uncovered
-    sign define fstatno text=XX texthl=fstatno
-    sign define covered text=XX texthl=covered
-    sign define branch_true text=IF texthl=branch_true
-    sign define branch_false text=EL texthl=branch_false
+    hi uncovered guifg=#752E2B guibg=#AB4642 ctermfg=196 ctermbg=196
+    hi fstatno guifg=#383838 guibg=#ffc520  ctermfg=208 ctermbg=208
+    hi covered guifg=#739255 guibg=#A1B56C ctermfg=40 ctermbg=106
+    hi branch_true guifg=#383838 guibg=#F7CA88 ctermfg=16 ctermbg=226
+    hi branch_false guifg=#383838 guibg=#F7CA88 ctermfg=16 ctermbg=226
+    sign define uncovered text=✘ texthl=uncovered
+    sign define fstatno text=✘ texthl=fstatno
+    sign define covered text=✔ texthl=covered
+    sign define branch_true text=if texthl=branch_true
+    sign define branch_false text=el texthl=branch_false
 endfunction
 
 fun! s:istanbulShow() "{{{
